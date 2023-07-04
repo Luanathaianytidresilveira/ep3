@@ -1,6 +1,7 @@
 header{
     grid-area: cabe;
     background-color: aquamarine;
+    position: relative;
 }
 main{
     grid-area: prin;
@@ -30,15 +31,20 @@ body{
 }
 nav li{
     display: inline;
-    margin: 1rem;
+    margin: 50px;
+    border: 15px;
 }
 nav a{
     text-decoration: none;
     font-size: 1,5rem;
-    color: black;
+    color: rgb(255, 255, 255);
     border: solid rgb(76, 82, 28);
-    background-color: rgb(220, 245, 96);
+    background-color: rgb(114, 93, 0);
     transition: 1s;
+}
+nav{
+    position: absolute;
+    right: 0px;   
 }
 nav a:hover{
     font-size: 1,1rem;
