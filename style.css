@@ -1,7 +1,6 @@
 header{
     grid-area: cabe;
-    background-color: aquamarine;
-    position: relative;
+    background-image: linear-gradient(to right, rgba(127, 255,212, 10.5) , rgb(7, 107, 74, 0.7));/* faz um degrade da cor do elemento */
 }
 main{
     grid-area: prin;
@@ -9,14 +8,14 @@ main{
 }
 aside{
     grid-area: brac;
-    background-color: aquamarine;
+    background-color: rgb(7, 107, 74);
 }
 footer{
     grid-area: roda;
-    background-color: aquamarine;
+    background-image: linear-gradient(to right, rgba(127, 255,212, 10.5) , rgb(7, 107, 74, 0.7));/* faz um degrade da cor do elemento */
 }
 body{
-    display: grid;
+    display: grid;/* para ele entender que o formato é grid*/
     grid-template-areas:
     " cabe cabe cabe cabe "
     " brac prin prin prin "
@@ -25,29 +24,29 @@ body{
     grid-template-rows: 210px auto 200px;
 }
 .logo{
-    border-radius: 10%;
+    border-radius: 10%;/* indica a curvatura das bordas*/
     transition: 1s;
-    width: 8%;
+    width: 10%;/* tamanho da imagem*/
+}
+nav{
+    display: flex;/* para ser flexivel*/
+    text-align: center;/* se posicionar no centro*/
+    position: relative;
 }
 nav li{
     display: inline;
-    margin: 50px;
-    border: 15px;
+    position:relative;
+    align-items: center;
 }
 nav a{
-    text-decoration: none;
-    font-size: 1,5rem;
-    color: rgb(255, 255, 255);
-    border: solid rgb(76, 82, 28);
-    background-color: rgb(114, 93, 0);
-    transition: 1s;
-}
-nav{
-    position: absolute;
-    right: 0px;   
+    text-decoration: none;/* para não ter borda*/
+    font-size: 1.2rem;/* tamanho da fonte*/
+    transition: 1s;/* tempo de transiçao*/
+    border: solid rgb( 0, 0, 0, 0);
+    position: left;/* posiçao para a esquerda*/
 }
 nav a:hover{
-    font-size: 1,1rem;
+    font-size: 6.5rem;/* tamanho do quadrado atras da imagem*/
     color: white;
     border: solid rgb(71, 92, 15);
     background: black;
@@ -55,6 +54,18 @@ nav a:hover{
 header{
     display: flex;
     padding: 1rem;
+}
+header li{
+    display: inline;
+    margin: 1rem;
+    left: 850px;
+}
+header a{
+    text-decoration:none; 
+    font-size: 4.6rem;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    transition: 1s;
 }
 .caixa_mae{
     border: solid 2px  rgb(76, 82, 28);
@@ -65,29 +76,88 @@ header{
     justify-content: center;
 }
 .card{
-    width: 300px;
-    height: 400px;
-    margin: 30px;
+    width: 300px;/*tamanho do card*/
+    height: 420px;/* altura do card*/
+    margin: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 10px;/* curvatura das bordas*/
     flex-direction: column;
-    box-shadow: 3px 6px 9px aquamarine;
+    box-shadow: 5px 10px 15px aquamarine;/* tamanho e cor do sombreado*/
     transition: 3s;
 }
 .card img{
-    width: 250px;
+    width: 190px;
+    height: 200px;
+    align-items: center;
+    border-radius: 1px;
 }
 .card a{
     background-color: black;
     text-decoration: none;
     color: white;
     width: 100px;
-    height: 30px;
+    height: 15px;
     text-align: center;
     padding: 5px;
 }
 .card :hover{
     background-color: aquamarine;
+}
+.carrinho{
+    width: 60px;
+    border-radius: 3px;
+}
+.promocao{
+    width: 60px;
+    border-radius: 3px; 
+}
+.estrela{
+    width: 70px;
+    border-radius: 3px; 
+}
+.rodape{
+    width: 10%;
+    border-radius: 10%;
+    transition: 1s;
+}
+footer a:hover{
+    font-size: 1.1rem;
+    color: white; 
+    border: solid rgb(0 , 0, 0); 
+    background: black; 
+}
+footer li{
+    display: inline;
+    margin: 0 0 0 200px;
+    margin-top: 8%;
+}
+footer{
+    text-align: center;
+    display: flex;
+}
+footer a{
+    text-decoration: none; 
+    font-size: 2.1rem;
+    color: rgb(2, 2, 2);
+    border: solid rgb(0, 0, 0, 0 );
+    background-color: aquamarine;
+    transition: 1s;
+}
+.mapa{
+    width: 180px;
+    border-radius: 5px;
+}
+.folhas{
+    width: 180px;
+    border-radius: 5px;
+}
+.frase{
+    width: 180px;
+    border-radius: 5px;
+}
+.livros{
+    width: 180px;
+    border-radius: 5px;
 }
