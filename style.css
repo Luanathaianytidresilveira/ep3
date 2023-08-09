@@ -9,6 +9,7 @@ main{
 aside{
     grid-area: brac;
     background-color: rgb(7, 107, 74);
+    padding: 9px;
 }
 footer{
     grid-area: roda;
@@ -148,18 +149,30 @@ footer a{
     transition: 1s;
 }
 .mapa{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .folhas{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .frase{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .livros{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
+}
+.cardpro{
+    width: 600px;/*tamanho do card*/
+    height: 420px;/* altura do card*/
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;/* curvatura das bordas*/
+    flex-direction: column;
+    box-shadow: 5px 10px 15px aquamarine;/* tamanho e cor do sombreado*/
+    transition: 3s;
 }
