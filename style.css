@@ -9,6 +9,7 @@ main{
 aside{
     grid-area: brac;
     background-color: rgb(7, 107, 74);
+    padding: 10%;
 }
 footer{
     grid-area: roda;
@@ -48,7 +49,7 @@ nav a{
 nav a:hover{
     font-size: 6.5rem;/* tamanho do quadrado atras da imagem*/
     color: white;
-    border: solid rgb(71, 92, 15);
+    border: solid rgb(75, 81, 49);
     background: black;
 }
 header{
@@ -133,6 +134,11 @@ footer li{
     margin: 0 0 0 200px;
     margin-top: 8%;
 }
+footer li{
+    display: inline;
+    position:relative;
+    align-items: center;
+}
 footer{
     text-align: center;
     display: flex;
@@ -146,40 +152,131 @@ footer a{
     transition: 1s;
 }
 .mapa{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .folhas{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .frase{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
 .livros{
-    width: 180px;
+    width: 150px;
     border-radius: 5px;
 }
-.cord{
-    width: 950px;/*tamanho do card*/
-    height: 600px;/* altura do card*/
+.card2{
+    width: 1100px;/*tamanho do card*/
+    height: 450px;/* altura do card*/
     margin: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;/* curvatura das bordas*/
     flex-direction: column;
     box-shadow: 5px 10px 15px aquamarine;/* tamanho e cor do sombreado*/
     transition: 3s;
+    align-items:center;
+    padding: 20px;
 }
-.destroi{
-    width: 180px;
-    border-radius: 5px;
-    margin: 15px;
-    margin-top: 70px;
-    margin-right: 700px;
+section{
+    display: flex;
+}
+section img{
+    width: 250px;
+    height: 300;
+    margin-right: 20px;
+    position: absolute;
+}
+section p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    position:relative;
+    margin-inline-start: 40%;
 }
 .texto{
-    margin-top: -50px; ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    position:relative;
+    margin-inline-start: 60%;
+}
+.odeus{
+    width: 180px;
+    height: 300;
+    margin-right: 900px;
+}
+.odeus1{
+    width: 200px;
+    height: 300;
+    margin-right: 900px;
+    margin-inline-start: 30%;
+}
+.borboleta{
+    width: 150px;
+    border-radius: 5px;
+}
+.voce{
+    width: 150px;
+    border-radius: 5px;
+}
+.pix{
+    width: 60px;
+    border-radius: 3px;
+}
+.master{
+    width: 60px;
+    border-radius: 3px;
+}
+.visa{
+    width: 60px;
+    border-radius: 3px;
+}
+.compreagora{
+    width: 60px;
+    border-radius: 3px;
+}
+
+.destroi{
+    width: 180px;
+    height: 300;
+    margin-right: 900px;
+    margin-top: 100px;
+}
+.desroisonhos2{
+    width: 180px;
+    height: 300;
+    margin-right: 900px;
+    margin-top: 100px;
+}
+.compre{
+    width: 120px;
+    border-radius: 3px;
+}
+.card3{
+    width:  450px;/*tamanho do card*/
+    height: 450px;/* altura do card*/
+    margin: 50px;
+    display: flex;
+    border-radius: 10px;/* curvatura das bordas*/
+    flex-direction: column;
+    box-shadow: 5px 10px 15px aquamarine;/* tamanho e cor do sombreado*/
+    transition: 3s;
+    align-items:center;
+    padding: 10px; 
+}
+.odeus5{
+    width: 200px;
+    height: 250px;
+    margin-right: 900px;
+    margin-inline-start: 55%; 
+}
+.text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 400px;
+    position:relative;
+    margin-top: 250px;
+}
+.adicione{
+    width: 60px;
+    border-radius: 3px;
 }
