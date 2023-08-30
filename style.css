@@ -32,11 +32,12 @@ body{
 nav{
     display: flex;/* para ser flexivel*/
     text-align: center;/* se posicionar no centro*/
-    position: relative;
+    position: absolute;
+    right: 60px;
+    top: 10px;
 }
 nav li{
     display: inline;
-    position:relative;
     align-items: center;
 }
 nav a{
@@ -44,7 +45,6 @@ nav a{
     font-size: 1.2rem;/* tamanho da fonte*/
     transition: 1s;/* tempo de transiçao*/
     border: solid rgb( 0, 0, 0, 0);
-    position: left;/* posiçao para a esquerda*/
 }
 nav a:hover{
     font-size: 6.5rem;/* tamanho do quadrado atras da imagem*/
@@ -55,6 +55,7 @@ nav a:hover{
 header{
     display: flex;
     padding: 1rem;
+    position: relative;
 }
 header li{
     display: inline;
@@ -142,6 +143,7 @@ footer li{
 footer{
     text-align: center;
     display: flex;
+    position: relative;
 }
 footer a{
     text-decoration: none; 
@@ -206,7 +208,7 @@ section p{
     margin-right: 900px;
 }
 .odeus1{
-    width: 200px;
+    width: 175px;
     height: 300;
     margin-right: 900px;
     margin-inline-start: 30%;
@@ -267,16 +269,33 @@ section p{
 .odeus5{
     width: 200px;
     height: 250px;
-    margin-right: 900px;
-    margin-inline-start: 55%; 
+    position: relative;
 }
 .text{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 400px;
-    position:relative;
-    margin-top: 250px;
+    position:absolute;
+    margin-top: 300px;
 }
 .adicione{
     width: 60px;
     border-radius: 3px;
+}
+@media only screen and (max-width:820px){
+    body{
+        grid-template-areas:
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+    aside{
+        display: none;
+    }
+}
+
+footer nav{
+    position: relative;
+    bottom: 20px;
 }
