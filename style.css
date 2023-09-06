@@ -299,3 +299,11 @@ footer nav{
     position: relative;
     bottom: 20px;
 }
+main nav{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+main{
+    position: relative;
+}
